@@ -3,8 +3,8 @@ package com.chtti.training;
 public class Employee {
     private String name;
 
-    public Employee() {
-    }
+//    public Employee() {
+//    }
     
     public Employee(int p) {
     }
