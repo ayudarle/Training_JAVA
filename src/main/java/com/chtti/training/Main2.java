@@ -8,25 +8,25 @@ public class Main2 {
         for (int i = 0; i < dayOfWeek.length; i++) {
             switch (dayOfWeek[i]) {
                 case "Sunday":
-                    System.out.println("周一");
+                    System.out.println("周日");
                     break;
                 case "Monday":
-                    System.out.println("2");
+                    System.out.println("周一");
                     break;
                 case "Tuesday":
-                    System.out.println("3");
+                    System.out.println("周二");
                     break;
                 case "Wednesday":
-                    System.out.println("4");
+                    System.out.println("周三");
                     break;
                 case "Thursday":
-                    System.out.println("5");
+                    System.out.println("周四");
                     break;
                 case "Friday":
-                    System.out.println("6");
+                    System.out.println("周五");
                     break;
                 case "Saturday":
-                    System.out.println("6");
+                    System.out.println("周六");
                     break;
             }
         }
