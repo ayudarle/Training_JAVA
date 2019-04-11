@@ -5,6 +5,9 @@ public class Employee {
 
     public Employee() {
     }
+    
+    public Employee(int p) {
+    }
 
     public Employee(String name) {
         this.name = name;
