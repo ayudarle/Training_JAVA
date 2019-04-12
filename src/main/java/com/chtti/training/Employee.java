@@ -1,13 +1,22 @@
 package com.chtti.training;
 
 public class Employee {
-    private String name;
+
+    static {
+        counter = 500;
+        System.out.println("test");
+    }
 
     public Employee() {
+    }
+
+    public static int getCounter(){
+        return counter;
     }
    
     public Employee(String name) {
         this.name = name;
+        counter++;
     }
 
     public String getName() {
@@ -24,4 +33,7 @@ public class Employee {
         emp1.setName("Kevin Wang");
         System.out.println("keven name="+emp1.getName());
     }
+
+    private String name;
+    private static int counter;
 }
