@@ -1,6 +1,8 @@
 package com.chtti.training;
 
-public class Employee {
+import lab8.Work;
+
+public class Employee implements Work {
 
     static {
         counter = 500;
@@ -10,10 +12,10 @@ public class Employee {
     public Employee() {
     }
 
-    public static int getCounter(){
+    public static int getCounter() {
         return counter;
     }
-   
+
     public Employee(String name) {
         this.name = name;
         counter++;
@@ -29,11 +31,21 @@ public class Employee {
 
     public static void main(String[] args) {
         Employee emp1 = new Employee("Kevin");
-        System.out.println("keven name="+emp1.getName());
+        System.out.println("keven name=" + emp1.getName());
         emp1.setName("Kevin Wang");
-        System.out.println("keven name="+emp1.getName());
+        System.out.println("keven name=" + emp1.getName());
     }
 
     private String name;
     private static int counter;
+
+    @Override
+    public void startWork() {
+
+    }
+
+    @Override
+    public void endWork() {
+
+    }
 }
